@@ -22,9 +22,9 @@ void setup() {
   textSize(50);
   fill(0, 255, 0);
 
-  fork = loadImage("fork.png");
-  burger = loadImage("burger.png");
-  background = loadImage("tableCloth.gif");
+  fork = loadImage("https://cloud.githubusercontent.com/assets/14878231/11727668/d5079db4-9f4a-11e5-8f66-f6bc45ab28c1.png");
+  burger = loadImage("https://cloud.githubusercontent.com/assets/14878231/11727652/ba53b714-9f4a-11e5-9a56-c349c4a77154.png");
+  background = loadImage("https://cloud.githubusercontent.com/assets/14878231/11727670/dbda4efc-9f4a-11e5-8e6c-29cb3ced8a10.gif");
 
 
   for (int i = 0; i < myFoods.length; i++) { //initialize array
