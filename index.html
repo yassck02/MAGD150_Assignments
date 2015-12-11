@@ -2,23 +2,11 @@
   <header>
   <script src="https://raw.githubusercontent.com/processing-js/processing-js/v1.4.8/processing.js"></script>
   </header>
-  <h1>Your FINAL SKETCH Title</h1>
-  <script type="text/processing" data-processing-target="mycanvas-final">
-
-  <!-- Your FINAL SKETCH goes here -->
-  
-
-
-  </script>
-  <canvas id="mycanvas-final"></canvas>
-  <p>Description: On my FINAL SKETCH ASSIGNMENT</p>
-        <br />
-        <br />
-  <h1>Your Sketch1 Title</h1>
+  <h1>Your Sketch Title</h1>
   <script type="text/processing" data-processing-target="mycanvas1">
   
-  <!-- Your sketch1 goes here -->
-void setup(){
+  
+ void setup(){
   
    size(400,400);
    background(0, 0, 0);
@@ -110,46 +98,37 @@ void draw () { //helps get coordinates when drawing
 
   </script>
   <canvas id="mycanvas1"></canvas>
-  <p>Description:</p>
-        <br />
-        <br />
-  <h1>Your Sketch2 Title</h1>
+  <br />
+  <br />  
+    <br />
+  
+    <h1>My second sketch </h1>
   <script type="text/processing" data-processing-target="mycanvas2">
   
-  <!-- Your sketch2 goes here -->
-
-  </script>
-  <canvas id="mycanvas2"></canvas>
-  <p>Description:</p>
-        <br />
-        <br />
-  <h1>Your Sketch3 Title</h1>
-  <script type="text/processing" data-processing-target="mycanvas3">
   
-  <!-- Your sketch3 goes here -->
+  int theta = 0;
+  int diagonalSlide = 0;
+  color newColor;
+  void setup(){
+    size(800, 600); 
+  }
+  void draw(){
+    if(keyPressed){
+      newColor = round(random(255));
+    }
+    background(newColor);
+    
+    translate(diagonalSlide, diagonalSlide);
+    theta += 10;
+    rotate((theta));
+    rect(0, 0, 200, 200);
+    rect(-200,-200, 200, 200);
+    diagonalSlide++;
+  }
 
   </script>
-  <canvas id="mycanvas3"></canvas>
-  <p>Description:</p>
-        <br />
-        <br />
-  <h1>Your Sketch4 Title</h1>
-  <script type="text/processing" data-processing-target="mycanvas4">
+    <canvas id="mycanvas2"></canvas>
   
-  <!-- Your sketch4 goes here -->
-
-  </script>
-  <canvas id="mycanvas4"></canvas>
-  <p>Description:</p>
-        <br />
-        <br />
-  <h1>Your Sketch5 Title</h1>
-  <script type="text/processing" data-processing-target="mycanvas5">
-  
-  <!-- Your sketch5 goes here -->
-
-  </script>
-  <canvas id="mycanvas5"></canvas>
-  <p>Description:</p>
   </body>
-</html>  
+</html> 
+
