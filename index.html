@@ -2,11 +2,32 @@
   <header>
   <script src="https://raw.githubusercontent.com/processing-js/processing-js/v1.4.8/processing.js"></script>
   </header>
-  <h1>Your Sketch Title</h1>
+  <h1>FINAL</h1>
   <script type="text/processing" data-processing-target="mycanvas1">
   
+  </script>
+  <canvas id="mycanvas1"></canvas>
   
- void setup(){
+  
+  
+  
+  
+  
+  
+  <br />
+  <br />  
+  <br />
+  
+  
+  
+  
+  
+  
+  
+  <h1>My first sketch </h1>
+  <script type="text/processing" data-processing-target="mycanvas2">
+
+  void setup(){
   
    size(400,400);
    background(0, 0, 0);
@@ -27,12 +48,9 @@
    ellipseMode(CENTER);
    ellipse(200, 200, 360, 360);
    ellipse(200, 200, 345, 345);
-   
-   
-   
+
    //dome
    ellipse(200, 160, 125, 100); 
-   
    rectMode(CENTER);
    rect(200, 160, 175, 25);
    rect(200, 250, 300, 20);
@@ -41,7 +59,6 @@
    rect(200, 200, 200, 80);
    rect(200, 200, 100, 70);
    rect(200, 250, 125, 25);
-   
    
    //stairs
    line(140, 257, 260, 257);
@@ -91,43 +108,46 @@
    textSize(20);
    text("E Pluribus Unum", 120, 80); 
 }
-
 void draw () { //helps get coordinates when drawing
   println (mouseX +"," + mouseY);
 } 
-
   </script>
-  <canvas id="mycanvas1"></canvas>
+  <canvas id="mycanvas2"></canvas>
+  
+  
+  
+  
+  
+  
   <br />
   <br />  
-    <br />
-  
-    <h1>My second sketch </h1>
-  <script type="text/processing" data-processing-target="mycanvas2">
+  <br />
   
   
-  int theta = 0;
-  int diagonalSlide = 0;
-  color newColor;
-  void setup(){
-    size(800, 600); 
-  }
-  void draw(){
-    if(keyPressed){
-      newColor = round(random(255));
-    }
-    background(newColor);
-    
-    translate(diagonalSlide, diagonalSlide);
-    theta += 10;
-    rotate((theta));
-    rect(0, 0, 200, 200);
-    rect(-200,-200, 200, 200);
-    diagonalSlide++;
-  }
-
+  
+  
+  
+  
+  <script src="https://raw.githubusercontent.com/processing-js/processing-js/v1.4.8/processing.js"></script>
+  </header>
+  <h1>My Fifth sketch</h1>
+  <script type="text/processing" data-processing-target="mycanvas1" data-processing-source+"https://github.com/yassck02/MAGD150_Assignments/raw/master/Assignment_5.pde">
   </script>
-    <canvas id="mycanvas2"></canvas>
+  <canvas id="mycanvas1"></canvas>
+  
+  
+  
+  
+  
+  
+  
+  <br />
+  <br />  
+  <br />
+  
+  
+  
+  
   
   </body>
 </html> 
