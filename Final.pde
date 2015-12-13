@@ -24,9 +24,9 @@ void setup() {
 
   //frameRate(15);
 
-  blueTank = loadImage("TankBlue.png");
-  redTank = loadImage("TankRed.png");
-  startScreen = loadImage("startScreen.png");
+  blueTank = loadImage("https://cloud.githubusercontent.com/assets/14878231/11768026/c02c325a-a185-11e5-95b5-5119d7f58eb6.png");
+  redTank = loadImage("https://cloud.githubusercontent.com/assets/14878231/11768027/c4b99998-a185-11e5-99d5-47877506a515.png");
+  startScreen = loadImage("https://cloud.githubusercontent.com/assets/14878231/11768024/b6df1c94-a185-11e5-9693-eeb23ee27f26.png");
 
   for (int i = 0; i < powerUps.length; i++) { //Initanizes each item in the array as a new powerup
     powerUps[i] = new PowerUp();
